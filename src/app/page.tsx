@@ -1,7 +1,3 @@
-import React from 'react'
+import { LandingScreen } from '@tourism/views'
 
-function page() {
-  return <></>
-}
-
-export default page
+export default LandingScreen
