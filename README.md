@@ -32,3 +32,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+=========================================
+npm i react-hot-toast zustand
+
+<!-- Prisma Setup -->
+
+npm install prisma @prisma/client
+
+then for initializing prisma
+npx prisma init
+
+for pushing changes in db from prisma
+npx prisma db push
+
+for pulling changes from db to prisma
+npx prisma db pull
+
+for generating client
+npx prisma generate
+
+<!-- Deploy on vercel -->
+
+https://nextjs.org/learn/basics/deploying-nextjs-app/deploy
