@@ -52,6 +52,9 @@ npx prisma db pull
 for generating client
 npx prisma generate
 
+for fonts
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
 <!-- Deploy on vercel -->
 
 https://nextjs.org/learn/basics/deploying-nextjs-app/deploy

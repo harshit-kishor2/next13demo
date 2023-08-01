@@ -2,7 +2,13 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
+import { Header } from '@tourism/components'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+// Tell Font Awesome to skip adding the CSS automatically
+// since it's already imported above
+config.autoAddCss = false
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -19,28 +25,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <>
-          <div className='fixed top-0 left-0 right-0 z-[2]'>
-            <div className='flex justify-between items-center m-auto px-10 text-white'>
-              <Link href={'/'}>
-                <h1 className='font-bold text-4xl'>Travel</h1>
-              </Link>
-              <ul className='flex justify-between items-center'>
-                <li className='p-4'>
-                  <Link href={'#'}>Home</Link>
-                </li>
-                <li className='p-4'>
-                  <Link href={'#'}>About</Link>
-                </li>
-                <li className='p-4'>
-                  <Link href={'#'}>Services</Link>
-                </li>
-                <li className='p-4'>
-                  <Link href={'#'}>Upcoming Packages</Link>
-                </li>
-              </ul>
-              <button className='border px-10 py-2'>Get In Touch</button>
-            </div>
-          </div>
+          <Header />
           {children}
         </>
       </body>
